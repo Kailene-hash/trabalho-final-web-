@@ -8,7 +8,7 @@
  Botis do Pedro é um site de vendas criado para que Pedro possa revender os produtos da oBoticário em qualidade e escala maior
 
 ### Problema a ser solucionado
-Aumentar as vendas do revendedor, além de possibilitar que clientes consigam ter um contato melhor com os revendedores e realizar suas compras sem sair de casa.
+Dificuldade do revendedor em vender uma quantidade maior dos produtos, dificuldade dos clientes em sair de casa para realizar suas compras.
 
 ### Público alvo
  Pessoas interessadas em produtos oBoticário, majoritariamente mulheres.
@@ -34,7 +34,7 @@ Conte com nós para uma possivel parceria!
 
 ### Problema a ser solucionado
 
-Aumentar as vendas do designer a partir de uma prévia realista dos projetos ofertados pela empresa.
+Dificuldade do designer em aumentar suas vendas.
 
 ### Público alvo
 Empreendimento imobiliário, construtoras, incorporadoras, estudios 3D e arquitetos.
@@ -55,8 +55,7 @@ Empreendimento imobiliário, construtoras, incorporadoras, estudios 3D e arquite
 Ághta Joias é um site de vendas criado para que o pai de Pedro possa vender joias e relógios em maior escala e com uma qualidade melhor.
 
 ### Problema a ser solucionado
-
-Aumentar as vendas, além de possibilitar que clientes consigam comprar com maior conforto, além de proporcionar maior facilidade para o vendedor por não precisar se locomover.
+Dificuldade em vender um maior número de joias, dificuldade de locomoção do vendedor, dificuldade dos clientes em sair de casa para realizar suas compras.
 
 ### Público alvo
 Pessoas adultas.
