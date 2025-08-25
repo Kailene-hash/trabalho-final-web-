@@ -20,5 +20,6 @@ o trabalho oferecido pela empresa e a qualidade das ilustrações.
 Principais funcionalidades:
 1. Apresentar o portifólio de designes da empresa.
 2. Apresentar as formas de contato como WhatsApp, Instagram, telefone para que os clientes tenham um acesso mais rápido ao designer. 
+
 Link de compartilhamento do Figma:
 https://www.figma.com/design/mMbHmALlbrAnaTF3Dg2IKe/Trabalho-Wireframes?node-id=0-1&t=bVGjijHH989hQdA5-1
