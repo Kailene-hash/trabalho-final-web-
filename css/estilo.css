@@ -3,4 +3,55 @@ header, #second, #contato, #stream {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  background-color: #c7c5c5;
+}
+.link-menu {
+  color: #fff;
+  background-color: #555;
+  border-radius: 8px;
+  padding: 2px 6px;
+  text-decoration: none;
+}
+#logo{
+  width: 80px;
+  height: 75px;
+  align-items: center;
+  border-radius: 60px;
+}
+#menu{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 25px;
+}
+#principal{
+  width: 1000px;
+  height:700px;
+  margin: 0 auto;
+}
+#principal img{
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+}
+#second{
+  width: 1000px;
+  height: 700px;
+  margin: 0 auto;
+
+}
+
+footer{
+  background-color: #c7c5c5;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 10px 20px;
+}
+#contato img{
+  width: 80px;
+  height: 75px;
 }
