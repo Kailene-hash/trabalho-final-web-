@@ -30,12 +30,25 @@ header, #second, #contato, #stream {
   width: 1000px;
   height:700px;
   margin: 0 auto;
+  
 }
-#principal img{
+.container {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza vertical (opcional) */
+  width: 100%;
+}
+
+.container .foto {
   display: block;
-  margin: 0 auto;
-  width: 1000px;
+  width: 300%;       /* ajuste aqui (ex.: 90%, 100%...) */
+  max-width: 2000px;/* limite pra não estourar em telas grandes */
+  height: auto;
+  float: none;      /* garante que não esteja flutuando */
+  position: static; /* reseta position caso exista outro estilo */
+  margin: 0 auto;   /* redundante com flex, mas seguro */
 }
+
 #second{
   width: 1000px;
   height: 700px;
