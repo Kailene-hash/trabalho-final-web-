@@ -1,9 +1,17 @@
-header, #second, #contato, #stream {
+/* Remove margens e padding padrão da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
   display:flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #c7c5c5;
+  padding: 10px 40px;
 }
 .link-menu {
   color: #fff;
@@ -15,7 +23,6 @@ header, #second, #contato, #stream {
 #logo{
   width: 80px;
   height: 75px;
-  align-items: center;
   border-radius: 60px;
 }
 #menu{
@@ -27,44 +34,75 @@ header, #second, #contato, #stream {
   padding: 25px;
 }
 #principal{
-  width: 1000px;
+  width: 100%;
   height:700px;
   margin: 0 auto;
-  
+  position: relative; 
 }
-.container {
-  display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center;     /* centraliza vertical (opcional) */
+#textoInd {
+  position: absolute;
+  top:27%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  width: 80%;
+  text-align: center;
+}
+#principal img{
   width: 100%;
-}
-
-.container .foto {
-  display: block;
-  width: 300%;       /* ajuste aqui (ex.: 90%, 100%...) */
-  max-width: 2000px;/* limite pra não estourar em telas grandes */
   height: auto;
-  float: none;      /* garante que não esteja flutuando */
-  position: static; /* reseta position caso exista outro estilo */
-  margin: 0 auto;   /* redundante com flex, mas seguro */
+  max-height: 400px;
+  object-fit: cover;
+  display:block;
+}
+#second {
+  display: flex;           /* ativa o flex */
+  flex-direction: row;     /* agora os itens ficam lado a lado */
+  justify-content: center; /* centraliza horizontalmente as colunas */
+  height: auto;
+  margin:  10px 0;
+  padding: 20px;
+}
+.text{
+  width: 40%;
+  margin: 1%;
+  padding: 10px;
+  background: #e5e4f7;
+  border: 1px solid rgb(11, 11, 51);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 50px;
+
 }
 
-#second{
-  width: 1000px;
-  height: 700px;
-  margin: 0 auto;
-
-}
-
-footer{
-  background-color: #c7c5c5;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
+footer {
+  display: flex;
+  background-color: #d4cdcd;
+  align-items: center;          /* centraliza verticalmente */
+  justify-content: space-between; /* logo à esquerda, contatos à direita */
+  height: 70px;
   padding: 10px 20px;
+  margin-top: 30px;
 }
-#contato img{
-  width: 80px;
-  height: 75px;
+
+#logo img {
+  width: 50px; /* você pode ajustar o tamanho da logo */
+  height: auto;
+  border-radius: 60px;
 }
+
+#contato {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* espaço entre os ícones */
+}
+
+#contato img {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+
