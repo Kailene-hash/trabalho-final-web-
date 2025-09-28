@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /* Remove margens e padding padrão da página */
 * {
   margin: 0;
@@ -10,12 +15,12 @@ header{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #c7c5c5;
+  background-color: #525252;
   padding: 10px 40px;
 }
 .link-menu {
   color: #fff;
-  background-color: #555;
+  background-color: #363636;
   border-radius: 8px;
   padding: 2px 6px;
   text-decoration: none;
@@ -35,57 +40,70 @@ header{
 }
 #principal{
   width: 100%;
-  height:700px;
+  height:450px;
   margin: 0 auto;
-  position: relative; 
+  position: relative;
+  background-color: #c7c5c5; 
 }
 #textoInd {
   position: absolute;
-  top:27%;
+  top:40%;
   left:50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(164, 195, 222);
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
   width: 80%;
   text-align: center;
 }
-#principal img{
+#principal img {
   width: 100%;
   height: auto;
   max-height: 400px;
   object-fit: cover;
-  display:block;
+  display: block;
+  margin-bottom: 0; /* 🔑 garante que não empurre o próximo elemento */
 }
+
+
+
 #second {
-  display: flex;           /* ativa o flex */
-  flex-direction: row;     /* agora os itens ficam lado a lado */
-  justify-content: center; /* centraliza horizontalmente as colunas */
-  height: auto;
-  margin:  10px 0;
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;       /* controla só o espaço entre as caixas */
+  margin-top: 0px;
+  margin-bottom: 0px;   /* 🔑 encosta no elemento acima */
+  padding: 40px;
+  background-color: #c7c5c5;  
+   /* 🔑 sem preenchimento interno extra */
 }
-.text{
+
+
+
+
+.text {
   width: 40%;
-  margin: 1%;
-  padding: 10px;
-  background: #e5e4f7;
+  margin: 0;       /* elimina margens extras */
+  padding: 20px;   /* mantém padding interno */
+  background: #8b888b;
+  color: rgba(255,255,255);
   border: 1px solid rgb(11, 11, 51);
   border-radius: 10px;
   text-align: center;
-  font-size: 50px;
-
+  font-size: 42px;
 }
+
 
 footer {
   display: flex;
-  background-color: #d4cdcd;
+  background-color: #525252;
   align-items: center;          /* centraliza verticalmente */
   justify-content: space-between; /* logo à esquerda, contatos à direita */
-  height: 70px;
+  height: 80px;
   padding: 10px 20px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 #logo img {
