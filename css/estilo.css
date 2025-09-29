@@ -160,7 +160,6 @@ footer {
   margin-bottom: 0px;   /* 🔑 encosta no elemento acima */
   padding: 40px;
   background-color: #c7c5c5;  
-   /* 🔑 sem preenchimento interno extra */
 }
 
 
@@ -207,8 +206,7 @@ footer {
   text-align: center;
   font-size: 40px;
   align-items: justify-content;
-
-  
+ 
 }
 
 #principalContato img {
@@ -231,7 +229,6 @@ footer {
   margin-bottom: 0px;   /* 🔑 encosta no elemento acima */
   padding: 40px;
   background-color: #c7c5c5;  
-   /* 🔑 sem preenchimento interno extra */
 }
 
 #textoIndContato {
@@ -247,13 +244,14 @@ footer {
   text-align: center;
 }
 
-
-
 .card {
   background-color: #dcdcdc; /* fundo cinza */
   padding: 20px;
   border: 2px solid #0a1a3f; /* borda azul escura */
   width: 350px;
+  height: 400px;
+  margin-top: 16%;
+  border-radius: 10px;
 }
 
 .linha {
@@ -273,3 +271,7 @@ footer {
   font-size: 16px;
   background-color: #fff;
 }
+
+
+/**********************************LOGIN ADMIN*********************************/
+
