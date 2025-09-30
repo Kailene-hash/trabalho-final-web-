@@ -249,7 +249,7 @@ footer {
   padding: 20px;
   border: 2px solid #0a1a3f; /* borda azul escura */
   width: 350px;
-  height: 400px;
+  height: 470px;
   margin-top: 16%;
   border-radius: 10px;
 }
@@ -275,3 +275,11 @@ footer {
 
 /**********************************LOGIN ADMIN*********************************/
 
+/**********************************PORTFÓLIO ADMIN*********************************/
+#botEdit{
+  height: 30px;
+
+}
+#botExcluir{
+  height: 30px;
+}
