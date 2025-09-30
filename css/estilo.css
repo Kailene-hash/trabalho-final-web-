@@ -3,7 +3,6 @@ html, body {
   padding: 0;
 }
 
-/* Remove margens e padding padrão da página */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +17,7 @@ header{
   background-color: #525252;
   padding: 10px 40px;
 }
+
 .link-menu {
   color: #fff;
   background-color: #363636;
@@ -25,11 +25,13 @@ header{
   padding: 2px 6px;
   text-decoration: none;
 }
+
 #logo{
   width: 80px;
   height: 75px;
   border-radius: 60px;
 }
+
 #menu{
   list-style: none;
   display: flex;
@@ -38,6 +40,7 @@ header{
   gap: 10px;
   padding: 25px;
 }
+
 #principal{
   width: 100%;
   height:450px;
@@ -45,6 +48,7 @@ header{
   position: relative;
   background-color: #c7c5c5; 
 }
+
 #textoInd {
   position: absolute;
   top:40%;
@@ -57,36 +61,31 @@ header{
   width: 80%;
   text-align: center;
 }
+
 #principal img {
   width: 100%;
   height: auto;
   max-height: 400px;
   object-fit: cover;
   display: block;
-  margin-bottom: 0; /* 🔑 garante que não empurre o próximo elemento */
+  margin-bottom: 0;
 }
-
-
 
 #second {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;       /* controla só o espaço entre as caixas */
+  gap: 10px;      
   margin-top: 0px;
-  margin-bottom: 0px;   /* 🔑 encosta no elemento acima */
+  margin-bottom: 0px;  
   padding: 40px;
   background-color: #c7c5c5;  
-   /* 🔑 sem preenchimento interno extra */
 }
-
-
-
 
 .text {
   width: 40%;
-  margin: 0;       /* elimina margens extras */
-  padding: 20px;   /* mantém padding interno */
+  margin: 0;    
+  padding: 20px;   
   background: #8b888b;
   color: rgba(255,255,255);
   border: 1px solid rgb(11, 11, 51);
@@ -95,19 +94,18 @@ header{
   font-size: 42px;
 }
 
-
 footer {
   display: flex;
   background-color: #525252;
-  align-items: center;          /* centraliza verticalmente */
-  justify-content: space-between; /* logo à esquerda, contatos à direita */
+  align-items: center;          
+  justify-content: space-between;
   height: 85px;
   padding: 10px 20px;
   margin-top: 0px;
 }
 
 #logo img {
-  width: 50px; /* você pode ajustar o tamanho da logo */
+  width: 50px; 
   height: auto;
   border-radius: 60px;
 }
@@ -115,7 +113,7 @@ footer {
 #contato {
   display: flex;
   align-items: center;
-  gap: 15px; /* espaço entre os ícones */
+  gap: 15px; 
 }
 
 #contato img {
@@ -125,13 +123,12 @@ footer {
 }
 
 
-
 /**********************************SOBRE A EMPRESA*********************************/
 
 #textSobre {
   width: 50%;
-  margin: 0;       /* elimina margens extras */
-  padding: 20px;   /* mantém padding interno */
+  margin: 0;     
+  padding: 20px;  
   background: #8b888b;
   color: rgba(255,255,255);
   border: 1px solid rgb(11, 11, 51);
@@ -155,15 +152,16 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;       /* controla só o espaço entre as caixas */
+  gap: 10px;       
   margin-top: 0px;
-  margin-bottom: 0px;   /* 🔑 encosta no elemento acima */
+  margin-bottom: 0px;  
   padding: 40px;
   background-color: #c7c5c5;  
 }
 
 
 /**********************************PORTFÓLIO*********************************/
+
 #principalPortfolio  {
   display: flex;
   flex-direction: row;
@@ -173,17 +171,14 @@ footer {
   margin-bottom: 0px;   /* 🔑 encosta no elemento acima */
   padding: 40px;
   background-color: #c7c5c5;  
-   /* 🔑 sem preenchimento interno extra */
-
-  display: flex;
-  flex-wrap: wrap; /* permite quebrar linha */
+  flex-wrap: wrap; 
   gap: 14px;
   max-width: 2000px;
   margin: auto;
 }
 
 #principalPortfolio img {
-  width: calc(33.33% - 10px); /* 3 por linha */
+  width: calc(33.33% - 10px); 
   height: 30%;
   max-height: 900px;
   object-fit: cover;
@@ -197,8 +192,8 @@ footer {
 
 #textContato {
   width: 50%;
-  margin: 0;       /* elimina margens extras */
-  padding: 20px;   /* mantém padding interno */
+  margin: 0;      
+  padding: 20px;  
   background: #8b888b;
   color: rgba(255,255,255);
   border: 1px solid rgb(11, 11, 51);
@@ -206,7 +201,6 @@ footer {
   text-align: center;
   font-size: 40px;
   align-items: justify-content;
- 
 }
 
 #principalContato img {
@@ -224,9 +218,9 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;       /* controla só o espaço entre as caixas */
+  gap: 10px;      
   margin-top: 0px;
-  margin-bottom: 0px;   /* 🔑 encosta no elemento acima */
+  margin-bottom: 0px;   
   padding: 40px;
   background-color: #c7c5c5;  
 }
@@ -245,9 +239,9 @@ footer {
 }
 
 .card {
-  background-color: #dcdcdc; /* fundo cinza */
+  background-color: #dcdcdc; 
   padding: 20px;
-  border: 2px solid #0a1a3f; /* borda azul escura */
+  border: 2px solid #0a1a3f; 
   width: 350px;
   height: 470px;
   margin-top: 16%;
@@ -275,11 +269,47 @@ footer {
 
 /**********************************LOGIN ADMIN*********************************/
 
-/**********************************PORTFÓLIO ADMIN*********************************/
+#main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:450px;
+  background-color: #c7c5c5; 
+  gap: 10px;       
+  margin-top: 0px;
+  margin-bottom: 0px;   
+  padding: 40px;
+}
+
+.card2{
+  text-align: center;
+  background-color: #dcdcdc;
+  padding: 20px;
+  border: 2px solid #0a1a3f;
+  width: 350px;
+  height: 100px;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+.itemAdm{
+  color: #fff;
+  background-color:#fff;
+  border-radius: 8px;
+  padding: 2px 6px;
+  text-decoration: none;
+  list-style: none;
+}
+
+/**********************************PORTFÓLIO/CONTATO ADMIN*********************************/
+
 #botEdit{
   height: 30px;
 
 }
+
 #botExcluir{
   height: 30px;
 }
