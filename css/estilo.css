@@ -14,7 +14,7 @@ header{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #525252;
+  background-color: #476da0;
   padding: 10px 40px;
 }
 
@@ -73,8 +73,8 @@ header{
 
 #second {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items:center;
   gap: 10px;      
   margin-top: 0px;
   margin-bottom: 0px;  
@@ -82,21 +82,9 @@ header{
   background-color: #c7c5c5;  
 }
 
-.text {
-  width: 40%;
-  margin: 0;    
-  padding: 20px;   
-  background: #8b888b;
-  color: rgba(255,255,255);
-  border: 1px solid rgb(11, 11, 51);
-  border-radius: 10px;
-  text-align: center;
-  font-size: 42px;
-}
-
 footer {
   display: flex;
-  background-color: #525252;
+  background-color: #476da0;
   align-items: center;          
   justify-content: space-between;
   height: 85px;
@@ -120,6 +108,42 @@ footer {
   width: 35px;
   height: 35px;
   border-radius: 5px;
+}
+.bloco-destaque {
+  display: flex;
+  flex-direction: column; /* empilha verticalmente */
+  align-items: center; /* centraliza todo o conteúdo */
+  gap: 20px; /* espaço entre texto e imagens */
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.texto-bloco p {
+  width: 100%;
+  background-color: #8ca7c5;
+  color: #fff;
+  padding: 20px;
+  font-size: 28px;
+  border-radius: 10px;
+  text-align: center; /* centraliza o texto */
+}
+
+.imagens-baixo {
+  display: flex;
+  flex-direction: row; /* lado a lado */
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap; /* para mobile, imagens quebram linha se necessário */
+}
+
+.imagens-baixo img {
+  width: 45%; /* duas imagens lado a lado */
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 
@@ -166,9 +190,9 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;       /* controla só o espaço entre as caixas */
+  gap: 10px;      
   margin-top: 0px;
-  margin-bottom: 0px;   /* 🔑 encosta no elemento acima */
+  margin-bottom: 0px;  
   padding: 40px;
   background-color: #c7c5c5;  
   flex-wrap: wrap; 
@@ -305,7 +329,7 @@ footer {
 
 /**********************************PORTFÓLIO/CONTATO ADMIN*********************************/
 
-#botEdit{
+#botAdd{
   height: 30px;
 
 }
