@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -111,9 +113,9 @@ footer {
 }
 .bloco-destaque {
   display: flex;
-  flex-direction: column; /* empilha verticalmente */
-  align-items: center; /* centraliza todo o conteúdo */
-  gap: 20px; /* espaço entre texto e imagens */
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px; 
   width: 90%;
   max-width: 1200px;
   margin: 40px auto;
@@ -126,20 +128,20 @@ footer {
   padding: 20px;
   font-size: 28px;
   border-radius: 10px;
-  text-align: center; /* centraliza o texto */
+  text-align: center;
 }
 
 .imagens-baixo {
   display: flex;
-  flex-direction: row; /* lado a lado */
+  flex-direction: row;
   gap: 20px;
   justify-content: center;
   width: 100%;
-  flex-wrap: wrap; /* para mobile, imagens quebram linha se necessário */
+  flex-wrap: wrap;
 }
 
 .imagens-baixo img {
-  width: 45%; /* duas imagens lado a lado */
+  width: 45%; 
   max-width: 500px;
   height: auto;
   border-radius: 10px;
@@ -199,6 +201,7 @@ footer {
   gap: 14px;
   max-width: 2000px;
   margin: auto;
+  position: relative;
 }
 
 #principalPortfolio img {
@@ -329,9 +332,24 @@ footer {
 
 /**********************************PORTFÓLIO/CONTATO ADMIN*********************************/
 
-#botAdd{
-  height: 30px;
-
+#botaoAdd{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  gap: 10px;
+  padding: 25px;
+}
+.botAdd{
+  color: #000000;
+  background-color: #eeeaea;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #000000;
 }
 
 #botExcluir{
