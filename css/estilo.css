@@ -26,6 +26,7 @@ header{
   border-radius: 8px;
   padding: 2px 6px;
   text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif';
 }
 
 #logo{
@@ -57,11 +58,13 @@ header{
   left:50%;
   transform: translate(-50%, -50%);
   color: rgb(164, 195, 222);
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  text-shadow: 6px 6px 10px rgb(0, 0, 0);
   width: 80%;
   text-align: center;
+  
 }
 
 #principal img {
@@ -129,6 +132,7 @@ footer {
   font-size: 28px;
   border-radius: 10px;
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif';
 }
 
 .imagens-baixo {
@@ -162,6 +166,11 @@ footer {
   text-align: center;
   font-size: 40px;
   align-items: justify-content;
+  font-family: 'Roboto Condensed', sans-serif';
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #principalSobre img {
@@ -228,6 +237,7 @@ footer {
   text-align: center;
   font-size: 40px;
   align-items: justify-content;
+  font-family: 'Roboto Condensed', sans-serif';
 }
 
 #principalContato img {
@@ -263,6 +273,7 @@ footer {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
   width: 80%;
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif';
 }
 
 .card {
@@ -319,6 +330,7 @@ footer {
   height: 100px;
   margin-top: 5%;
   border-radius: 10px;
+  font-family: 'Roboto Condensed', sans-serif';
 }
 
 .itemAdm{
@@ -342,10 +354,12 @@ footer {
   right: 20px;
   gap: 10px;
   padding: 25px;
+  
 }
 .botAdd{
   color: #000000;
   background-color: #eeeaea;
+  font-family: 'Roboto Condensed', sans-serif;
   border-radius: 3px;
   padding: 5px 10px;
   text-decoration: none;
@@ -354,4 +368,5 @@ footer {
 
 #botExcluir{
   height: 30px;
+  font-family: 'Roboto Condensed', sans-serif';
 }
