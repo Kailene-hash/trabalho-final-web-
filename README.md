@@ -30,7 +30,7 @@ https://www.figma.com/design/mMbHmALlbrAnaTF3Dg2IKe/Trabalho-Wireframes?node-id=
 Modelo Conceitual:
 
 Link:
-[modelo_conceitual] (db/Conceitual_web_imagem.png)
+[modelo_conceitual](db/Conceitual_web_imagem.png)
 
 Explicação: 
 
@@ -83,14 +83,14 @@ whatsapp: Permitir uma forma de se conectar diretamente com o responsável pelo 
 Modelo Lógico:
 
 Link: 
-[modelo_logico] (db/Lógico_web_imagem.png)
+[modelo_logico](db/Lógico_web_imagem.png)
 
 
 Modelo Físico:
 
 Link para arquivo DDL:
-[arquivoDDL] (db/DDL.sql)
+[arquivoDDL](db/DDL.sql)
 
 Link para arquivo DML:
-[arquivoDML] (db/DML.sql)
+[arquivoDML](db/DML.sql)
 
