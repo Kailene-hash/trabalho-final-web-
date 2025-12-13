@@ -1,4 +1,4 @@
-const urlBase = "https://github.com/PedroLuiz0000/back-end-tf-web";
+const urlBase = "https://back-end-tf-web-ten.vercel.app/";
 const tabelaCorpo = document.getElementById("tabela-corpo");
 tabelaCorpo.innerHTML = "Aguarde...";
 // Função autoexecutável para buscar e exibir as questões
