@@ -370,3 +370,79 @@ h1 {
   height: 30px;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+/**********************************ESTILO PARA O FORMULÁRIO *********************************/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+  
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 30px;
+}
+
+.form-group input:disabled {
+  background-color: #f0f0f0;
+  color: #888;
+}
+
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 30px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.botao.salvar {
+  background-color: #28a745;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #000000;
+}
+
+.botao.cancelar {
+  background-color: #dc3545;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #000000;
+}
+
+#imagem-preview {
+  margin-top: 10px;
+  max-width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

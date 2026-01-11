@@ -1,4 +1,3 @@
-alert("JS carregado");
 const botaoAutor = document.getElementById('botaoAutor');
 const elAutor = document.getElementById('autor');
 const elApi = document.getElementById('api');
