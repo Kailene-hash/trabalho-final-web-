@@ -3,14 +3,21 @@
   <head>
     <title>Ventura 3D</title>
     <link rel="stylesheet" href="../css/estilo.css">
+    <script src="js/protecao.js"></script>
     
   </head>
   <body>
     <header>
       <div id="logo">
-          <img id="logo" src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
+        <img src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
+      </div>
+
+      <div class="user-area">
+        <span class="user-name" id="userLogado"></span>
+        <button onclick="logout()" class="logoutBtn">Sair da conta</button>
       </div>
     </header>
+
     
     <section id="main">
         <h1>Escolha onde quer editar</h1>
@@ -33,5 +40,17 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script>
+      document.getElementById("userLogado").innerText =
+      localStorage.getItem("usuario");
+    </script>
   </body>
+
+  <script>
+  function logout()
+  {
+    localStorage.removeItem("logado");
+    window.location.href = "login.html";
+  }
+</script>
 </html>

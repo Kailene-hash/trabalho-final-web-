@@ -371,6 +371,35 @@ h1 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.user-area{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-name{
+  color: #fff;
+  font-weight: 600;
+  background: rgba(255,255,255,0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.logoutBtn {
+  background: #050052;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logoutBtn:hover {
+  background: #ff0000;
+}
+
 /**********************************ESTILO PARA O FORMULÁRIO *********************************/
 form {
   display: flex;
