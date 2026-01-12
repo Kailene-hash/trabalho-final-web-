@@ -565,3 +565,21 @@ form {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+
+input[type="file"] {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+  clip: auto !important;
+  pointer-events: auto !important;
+}
+
+.form-group {
+  overflow: visible !important;
+}
+
+
+
