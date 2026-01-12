@@ -46,10 +46,16 @@
     <div class="corpo">
       <form id="form-imagem">
         <div class="form-group">
+           <label for="imagem" class="btn-upload">
+              Selecionar imagem
+           </label>
 
-          <label>Imagem:</label>
+           <input type="file" id="imagem" accept="image/*">
 
-          <uc-upload-ctx-provider ctx-name="my-uploader">
+           <img id="imagem-preview" alt="Preview da imagem">
+          
+          
+          <c-upload-ctx-provider ctx-name="my-uploader">
 
             <uc-config
               ctx-name="my-uploader"

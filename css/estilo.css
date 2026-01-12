@@ -566,20 +566,37 @@ form {
   border-radius: 4px;
 }
 
+/* Esconde o input sem quebrar */
 input[type="file"] {
-  display: inline-block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  position: relative !important;
-  width: auto !important;
-  height: auto !important;
-  clip: auto !important;
-  pointer-events: auto !important;
+  display: none;
 }
 
-.form-group {
-  overflow: visible !important;
+/* Botão bonito */
+.btn-upload {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #1e40af;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
+
+.btn-upload:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
+/* Preview da imagem */
+#imagem-preview {
+  display: none;
+  margin-top: 15px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
 
 
 
