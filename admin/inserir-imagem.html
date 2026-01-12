@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inserir Imagem</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
-    />
-    <link rel="stylesheet" href="../css/estilo.css" />
-    <script src="js/protecao.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inserir Imagem</title>
 
-  <body>
-    <div id="container">
-      <header>
-        <div id="logo">
-          <img id="logo" src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
-        </div>
-         <h1>Front-End API</h1>
-        <nav>
-          <ul id="menu">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
+  />
+  <link rel="stylesheet" href="../css/estilo.css" />
+
+  <script src="js/protecao.js"></script>
+
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js">
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div id="logo">
+        <img id="logo" src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
+      </div>
+
+      <h1>Front-End API</h1>
+
+      <nav>
+        <ul id="menu">
           <li class="item-menu"><a class="link-menu" href="index.html">Home</a></li>
           <li class="item-menu"><a class="link-menu" href="adminport.html">Portfólio</a></li>
           <li class="item-menu"><a class="link-menu" href="admincontato.html">Contato</a></li>
-
         </ul>
-      </header>
-      <hr />
-      <div class="header-corpo">
-        <h2>Inserir Imagem</h2>
-      </div>
-      <div class="corpo">
-        <form id="form-imagem">
-          <div class="form-group">
-            <label for="imagem"
-              >Imagem: <span id="selimg" style="font-weight: lighter"></span
-            ></label>
+      </nav>
+    </header>
+
+    <hr />
+
+    <div class="header-corpo">
+      <h2>Inserir Imagem</h2>
+    </div>
+
+    <div class="corpo">
+      <form id="form-imagem" onsubmit="inserirImagem(event)">
+        <div class="form-group">
+
+          <label for="imagem">
+            Imagem:
+            <span id="selimg" style="font-weight: lighter"></span>
+          </label>
+
+          <!-- CORREÇÃO REAL AQUI -->
+          <uc-upload-ctx-provider ctx-name="my-uploader">
 
             <uc-config
               ctx-name="my-uploader"
-              use-cloud-image-editor="false"
-              source-list="local"
-              files-view-mode="list"
-              grid-show-file-names="true"
               pubkey="290409b26b7ec3f343e0"
-              multiple="false"
-            ></uc-config>
+              source-list="local"
+              multiple="false">
+            </uc-config>
 
             <uc-file-uploader-regular
               ctx-name="my-uploader"
-              class="uc-light"
-            ></uc-file-uploader-regular>
+              accept="image/*"
+              source-list="local">
+            </uc-file-uploader-regular>
 
-            <uc-upload-ctx-provider
-              ctx-name="my-uploader"
-            ></uc-upload-ctx-provider>
-            <!-- <input type="url" id="imagem" name="imagem" /> -->
-            <img id="imagem-preview" src="" alt="Selecione a imagem" />
-          </div>
-          <div class="form-actions">
-            <a type="submit" id="submit" class="botao salvar"> Salvar </a>
-            <a
-              class="botao cancelar"
-              onclick="window.location.href='adminport.html'"
-            >
-              Cancelar
-            </a>
-          </div>
-        </form>
-      </div>
+          </uc-upload-ctx-provider>
+
+          <input type="url" id="imagem" name="imagem">
+          <img id="imagem-preview" src="" alt="Selecione a imagem">
+
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" id="submit" class="botao salvar">Salvar</button>
+          <a class="botao cancelar" href="adminport.html">Cancelar</a>
+        </div>
+      </form>
     </div>
-    <script type="module" src="js/inserirQuestao.js"></script>
-  </body>
+  </div>
+
+  <script type="module" src="js/inserirQuestao.js"></script>
+</body>
 </html>
+
