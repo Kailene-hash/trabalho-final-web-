@@ -32,7 +32,7 @@ tabelaCorpo.innerHTML = "Aguarde...";
               <td>${imagem.id}</td>
               <td>${imagem.link_img}</td>
                 <td>
-                <a class="botao inserir" href="ver-imagem.html?id=${imagem.id}">Ver</a>
+                <a class="botao inserir" href="adminport.html?id=${imagem.id}">Ver</a>
                 <a class="botao excluir" data-id=${imagem.id}">Excluir</a>
               </td>
               `;
