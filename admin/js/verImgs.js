@@ -19,9 +19,12 @@ document.getElementById("id").value = "Carregando...";
     const data = await response.json();
 
     document.getElementById("id").value = data[0].id;
-    document.getElementById("imagem").value = data[0].link_imagem; // ← CORRIGIDO
+    document.getElementById("imagem").value = data[0].link_imagem;
+    document.getElementById("imagem-preview").src = data[0].link_imagem;
+    document.getElementById("imagem-preview").style.display = "block";
 
   } catch (error) {
-    document.getElementById("id").value = `Erro na requisição: ${error}`;
+    document.getElementById("id").value = `Erro: ${error}`;
+    alert("Erro ao carregar imagem: " + error.message);
   }
 })();

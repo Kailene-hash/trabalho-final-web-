@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Imagem - Ventura 3D</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="js/protecao.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <img src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
+            </div>
+            <h1>Detalhes da Imagem</h1>
+            <nav>
+                <ul id="menu">
+                    <li class="item-menu"><a class="link-menu" href="index.html">Home</a></li>
+                    <li class="item-menu"><a class="link-menu" href="adminport.html">Voltar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="header-corpo">
+            <h3>Visualizar Imagem</h3>
+        </div>
+
+        <div class="corpo">
+            <form id="form-imagem">
+                <div class="form-group">
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="imagem">Link da Imagem:</label>
+                    <input type="text" id="imagem" name="imagem" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label>Preview:</label>
+                    <img id="imagem-preview" alt="Preview" style="max-width: 400px; border-radius: 8px;">
+                </div>
+
+                <div class="form-actions">
+                    <a class="botao cancelar" href="adminport.html">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/verImg.js"></script>
+</body>
+</html>

@@ -14,6 +14,7 @@ tabelaCorpo.innerHTML = "Aguarde...";
     }
 
     const data = await response.json();
+
     tabelaCorpo.innerHTML = "";
 
     data.forEach((imagem) => {
@@ -21,9 +22,9 @@ tabelaCorpo.innerHTML = "Aguarde...";
       
       linha.innerHTML = `
               <td>${imagem.id}</td>
-              <td>${imagem.link_imagem}</td>
+              <td><img src="${imagem.link_imagem}" alt="Imagem" style="max-width: 100px; border-radius: 5px;"></td>
               <td>
-                <a class="botao inserir" href="adminport.html?id=${imagem.id}">Ver</a>
+                <a class="botao inserir" href="ver-imagem.html?id=${imagem.id}">Ver</a>
                 <a class="botao excluir" data-id="${imagem.id}">Excluir</a>
               </td>
       `;
@@ -44,6 +45,10 @@ tabelaCorpo.innerHTML = "Aguarde...";
   }
 
   async function excluirImagem(id) {
+    if (!confirm("Tem certeza que deseja excluir esta imagem?")) {
+      return;
+    }
+
     try {
       const endpoint = `/imagens/${id}`;
       const urlFinal = urlBase + endpoint;
@@ -58,9 +63,9 @@ tabelaCorpo.innerHTML = "Aguarde...";
 
       const data = await response.json();
       alert("Imagem excluída com sucesso!");
-      window.location.reload(); // Recarrega a página atual
+      window.location.reload(); // Recarrega a página
     } catch (error) {
-      alert("Imagem não foi excluída!");
+      alert("Erro ao excluir imagem: " + error.message);
       console.error(error);
     }
   }
