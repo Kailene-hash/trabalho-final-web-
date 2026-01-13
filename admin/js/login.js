@@ -14,9 +14,17 @@ form.addEventListener("submit", async function(e) {
     return;
   }
 
+  // Mostra mensagem de carregamento
+  erro.textContent = "Conectando...";
+  erro.style.display = "block";
+  erro.style.color = "blue";
+
   try {
-    // Faz a requisição para o back-end
-    const response = await fetch("https://back-end-tf-web-ten.vercel.app", {
+    const urlBase = "https://back-end-tf-web-ten.vercel.app";
+    
+    console.log("Tentando conectar ao servidor...");
+    
+    const response = await fetch(`${urlBase}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -27,7 +35,10 @@ form.addEventListener("submit", async function(e) {
       })
     });
 
+    console.log("Resposta recebida:", response.status);
+
     const data = await response.json();
+    console.log("Dados:", data);
 
     if (response.ok) {
       // Login bem-sucedido
@@ -36,12 +47,14 @@ form.addEventListener("submit", async function(e) {
       window.location.href = "index.html";
     } else {
       // Erro retornado pelo servidor
+      erro.style.color = "red";
       erro.textContent = data.mensagem || "Email ou senha incorretos!";
       erro.style.display = "block";
     }
   } catch (error) {
-    console.error("Erro ao fazer login:", error);
-    erro.textContent = "Erro ao conectar com o servidor!";
+    console.error("Erro completo:", error);
+    erro.style.color = "red";
+    erro.textContent = "Erro ao conectar com o servidor! Verifique sua conexão.";
     erro.style.display = "block";
   }
 });

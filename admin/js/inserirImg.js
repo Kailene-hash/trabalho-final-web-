@@ -23,7 +23,7 @@ ctxProvider.addEventListener("common-upload-success", (e) => {
   
     try {
       const dados = {
-        link_img: imageUrl, // ← CORRIGIDO (era "imagem")
+        link_img: imageUrl, // ← MANTÉM link_img
       };
       
       const endpoint = "/imagens";

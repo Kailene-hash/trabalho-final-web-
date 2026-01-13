@@ -4,7 +4,7 @@ tabelaCorpo.innerHTML = "Aguarde...";
 
 (async () => {
   try {
-    const endpoint = "/contato"; // ← TIROU O S (era /contatos)
+    const endpoint = "/contato";
     const urlFinal = urlBase + endpoint;
 
     const response = await fetch(urlFinal);
@@ -26,7 +26,6 @@ tabelaCorpo.innerHTML = "Aguarde...";
               <td>${contato.whatsapp}</td>
               <td>${contato.email}</td>
               <td>
-                <a class="botao editar" href="admincontato.html?id=${contato.id_contato}">Ver</a>
                 <a class="botao excluir" data-id="${contato.id_contato}">Excluir</a>
               </td>
       `;
@@ -47,8 +46,12 @@ tabelaCorpo.innerHTML = "Aguarde...";
   }
 
   async function excluirContato(id) {
+    if (!confirm("Tem certeza que deseja excluir este contato?")) {
+      return;
+    }
+
     try {
-      const endpoint = `/contato/${id}`; // ← TIROU O S
+      const endpoint = `/contato/${id}`;
       const urlFinal = urlBase + endpoint;
 
       const response = await fetch(urlFinal, {
@@ -59,9 +62,8 @@ tabelaCorpo.innerHTML = "Aguarde...";
         throw new Error(`Erro na requisição: ${response.status}`);
       }
 
-      const data = await response.json();
       alert("Contato excluído com sucesso!");
-      window.location.reload(); // Recarrega a página atual
+      window.location.reload();
     } catch (error) {
       alert("Contato não foi excluído!");
       console.error(error);

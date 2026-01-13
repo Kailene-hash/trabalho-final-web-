@@ -16,25 +16,28 @@
             </ul>
         </nav>
     </header>
-    
-    <section id="principalPortfolio">
-        <div id="botaoAdd"> 
-            <a class="botAdd" href="inserir-imagem.html">Adicionar imagem</a>
-        </div>
+    <div id="principalPortfolio">
+       <h2>Gerenciar Portfólio</h2>
+       <!-- Botão para inserir nova imagem -->
+       <div id="botaoAdd">
+            <a href="inserir-imagem.html" class="botAdd">+ Inserir Nova Imagem</a>
+       </div>
 
-        <h2>Imagens do Portfólio</h2>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Link da Imagem</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody id="tabela-corpo"></tbody>
-        </table>
-    </section>
+       <!-- Tabela de imagens -->
+       <table>
+         <thead>
+            <tr>
+                <th>ID</th>
+                <th>Imagem</th>
+                <th>Ações</th>
+            </tr>
+         </thead>
+         <tbody id="tabela-corpo">
+            <!-- As imagens serão carregadas aqui -->
+         </tbody>
+       </table>
+    </div>
+    
 
     <footer>
         <div id="logo">
@@ -46,6 +49,6 @@
         </div>
     </footer>
     
-    <script src="js/img.js"></script>
+    <script type="module" src="js/imgs.js"></script>
 </body>
 </html>
