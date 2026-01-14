@@ -4,7 +4,7 @@ tabelaCorpo.innerHTML = "Aguarde...";
 
 (async () => {
   try {
-    const endpoint = "/imagens"; // ← Mantém /imagens (plural) como está no back-end
+    const endpoint = "/imagens";
     const urlFinal = urlBase + endpoint;
 
     const response = await fetch(urlFinal);
@@ -20,10 +20,10 @@ tabelaCorpo.innerHTML = "Aguarde...";
       const linha = document.createElement("tr"); 
       
       linha.innerHTML = `
-              <td>${imagem.id_imagem}</td>
-              <td><img src="${imagem.link_img}" alt="Imagem" style="max-width: 100px; border-radius: 5px;"></td>
+              <td>${imagem.id}</td>
+              <td><img src="${imagem.link_imagem}" alt="Imagem" style="max-width: 100px; border-radius: 5px;"></td>
               <td>
-                <a class="botao excluir" data-id="${imagem.id_imagem}">Excluir</a>
+                <a class="botao excluir" data-id="${imagem.id}">Excluir</a>
               </td>
       `;
       tabelaCorpo.appendChild(linha); 
