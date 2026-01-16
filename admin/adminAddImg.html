@@ -12,23 +12,59 @@
       </div>
     </header>
 
-    <section id="main">
+    
       <h1>Adicione a imagem:  </h1>
-      <div class="card2">
-        <form action="/admin/index.html" method='post' >
-          <label for='email'>Email</label>
-          <input id='email' name='email' type='email'/><br>
-          <label for='senha'>Senha</label>
-          <input id='senha' name='senha' type='password'/><br>
-          <button>Confirmar</button>	
-        </form> 
-      </div>
-    </section>
+      <section id="main">
+    <h1>Adicione a imagem:</h1>
+    <div class="card2">
+        <form id="formAddImg">
+            <label for="link_imagem">Link da Imagem:</label>
+            <input id="link_imagem" name="link_imagem" type="text" placeholder="Ex: images/MinhaImagem.jpg" required /><br>
+            
+            <button type="submit">Adicionar Imagem</button>
+        </form>
+    </div>
+</section>
     
     <footer>
       <div id="logo">
         <img id="logo" src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
       </div>
     </footer>
+    <script>
+document.getElementById('formAddImg').addEventListener('submit', async function(e) {
+    e.preventDefault(); // Impede o envio padrão
+    
+    const linkImagem = document.getElementById('link_imagem').value;
+    
+    try {
+        const resposta = await fetch('http://localhost:3000/imagens', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                link_imagem: linkImagem
+            })
+        });
+        
+        const dados = await resposta.json();
+        
+        if (resposta.ok) {
+            alert('✅ Imagem adicionada com sucesso!');
+            document.getElementById('formAddImg').reset(); // Limpa o formulário
+        } else {
+            alert('❌ Erro: ' + dados.mensagem);
+        }
+    } catch (erro) {
+        console.error('Erro:', erro);
+        alert('❌ Erro ao conectar com o servidor. Certifique-se que o servidor está rodando!');
+    }
+});
+</script>
+
+
+
+
   </body>
 </html>
