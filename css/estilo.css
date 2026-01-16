@@ -480,6 +480,8 @@ body{
 
 /**********************************CONTATO ADMIN*********************************/
 
+/**********************************CONTATO ADMIN*********************************/
+
 #principalContato:not(.publico) {
   display: flex;
   flex-direction: column;
@@ -494,22 +496,63 @@ body{
   color: #0a1a3f;
   font-family: 'Times New Roman', Times, serif;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 0;
   font-size: 28px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Container para imagem e tabela lado a lado */
+.container-contato-admin {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  max-width: 1400px;
+  align-items: flex-start;
 }
 
 #principalContato:not(.publico) figure {
-  width: 100%;
-  max-width: 800px;
-  margin-bottom: 20px;
+  width: 40%;
+  min-width: 350px;
+  margin: 0;
 }
 
 #principalContato:not(.publico) figure img {
   width: 100%;
   height: auto;
   border-radius: 11px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Wrapper para a tabela ocupar o espaço restante */
+.tabela-wrapper {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.tabela-wrapper table {
+  width: 100%;
+  margin: 0;
+}
+
+/* Responsividade - em telas menores, volta a ficar em coluna */
+@media (max-width: 1024px) {
+  .container-contato-admin {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #principalContato:not(.publico) figure {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  .tabela-wrapper {
+    width: 100%;
+  }
+}
 
 /**********************************BOTÕES ADMIN*********************************/
 
