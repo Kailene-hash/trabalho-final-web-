@@ -836,3 +836,36 @@ input[type="file"] {
     font-size: 28px;
   }
 }
+
+/* ============================================
+   LOADING E MENSAGENS - SITE PÚBLICO
+   ============================================ */
+
+.loading, .loading-portfolio {
+  text-align: center;
+  padding: 40px 20px;
+  color: #0a1a3f;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  grid-column: 1 / -1; /* Ocupa toda a largura do grid */
+}
+
+.sem-imagens, .erro-portfolio {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  grid-column: 1 / -1;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.05);
+}
