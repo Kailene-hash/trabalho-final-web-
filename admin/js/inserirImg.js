@@ -29,7 +29,7 @@ async function inserirImagem(e) {
 
   try {
     const dados = {
-      link_img: imageUrl, // ← CORRIGIDO: agora usa "link_img"
+      link_img: imageUrl, // ← CORRIGIDO: usa "link_img"
     };
     
     const endpoint = "/imagens";

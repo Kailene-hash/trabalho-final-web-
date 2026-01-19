@@ -8,13 +8,13 @@ async function inserirContato(e) {
   
   try {
     const dados = {
-      instagram: document.getElementById("instagram").value, // ← Ajuste conforme seu HTML
+      instagram: document.getElementById("instagram").value,
       facebook: document.getElementById("facebook").value, 
       whatsapp: document.getElementById("whatsapp").value,
       email: document.getElementById("email").value, 
     };
 
-    const endpoint = "/contato"; // ← TIROU O S e a barra final
+    const endpoint = "/contato";
     const urlFinal = urlBase + endpoint;
 
     const response = await fetch(urlFinal, {
@@ -31,7 +31,7 @@ async function inserirContato(e) {
 
     alert("Contato inserido com sucesso!");
     window.location.href = "admincontato.html";
-	  
+   
   } catch (error) {
     alert("Contato não inserido: " + error);
     window.location.href = "admincontato.html";
