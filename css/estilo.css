@@ -480,8 +480,6 @@ body{
 
 /**********************************CONTATO ADMIN*********************************/
 
-/**********************************CONTATO ADMIN*********************************/
-
 #principalContato:not(.publico) {
   display: flex;
   flex-direction: column;
