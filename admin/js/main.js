@@ -1,4 +1,3 @@
-alert("JS carregado");
 const botaoAutor = document.getElementById('botaoAutor');
 const elAutor = document.getElementById('autor');
 const elApi = document.getElementById('api');
@@ -6,7 +5,7 @@ const elBd = document.getElementById('bd');
 
 botaoAutor.addEventListener('click', pegarInformacao);
 
-const urlBase = "https://back-end-tf-web-ten.vercel.app/";
+const urlBase = "https://back-end-tf-web-ten.vercel.app";
 
 async function pegarInformacao() {
 

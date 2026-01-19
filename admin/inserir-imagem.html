@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inserir Imagem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <script src="js/protecao.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <img src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
+            </div>
+            <h1>Front-End API</h1>
+            <nav>
+                <ul id="menu">
+                    <li class="item-menu"><a class="link-menu" href="index.html">Home</a></li>
+                    <li class="item-menu"><a class="link-menu" href="adminport.html">Portfólio</a></li>
+                    <li class="item-menu"><a class="link-menu" href="admincontato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="header-corpo">
+            <h2>Inserir Imagem</h2>
+        </div>
+
+        <div class="corpo">
+            <form id="form-imagem">
+                <div class="form-group">
+                    <label>Selecionar imagem:</label>
+                    <span id="selimg"></span>
+                    
+                    <uc-upload-ctx-provider ctx-name="my-uploader">
+                        <uc-config
+                            ctx-name="my-uploader"
+                            pubkey="290409b26b7ec3f343e0"
+                            source-list="local"
+                            multiple="false">
+                        </uc-config>
+                        <uc-file-uploader-regular
+                            ctx-name="my-uploader"
+                            accept="image/*">
+                        </uc-file-uploader-regular>
+                    </uc-upload-ctx-provider>
+
+                    <img id="imagem-preview" style="max-width:300px; display:none; margin-top:10px;">
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="submit" class="botao salvar">Salvar</button>
+                    <a class="botao cancelar" href="adminport.html">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="js/inserirImg.js"></script>
+</body>
+</html>

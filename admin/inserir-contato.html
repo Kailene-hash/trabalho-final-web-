@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inserir Questão</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
+    />
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+
+  <body>
+    <div id="container">
+    <header>
+      <div id="logo">
+        <img src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
+      </div>
+
+      <h1>Front-End API</h1>
+
+      <nav>
+        <ul id="menu">
+          <li class="item-menu"><a class="link-menu" href="index.html">Home</a></li>
+          <li class="item-menu"><a class="link-menu" href="adminport.html">Portfólio</a></li>
+          <li class="item-menu"><a class="link-menu" href="admincontato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <div class="header-corpo">
+        <h3>Inserir Contato</h3>
+      </div>
+      <div class="corpo">
+        <form id="form-contato">
+          <div class="form-group">
+            <label for="instagram">Instagram:</label>
+            <input type="text" id="instagram" name="instagram" /> 
+          </div>
+          <div class="form-group">
+            <label for="facebook">Facebook:</label>
+            <input type="text" id="facebook" name="facebook" />
+          </div>
+          <div class="form-group">
+            <label for="whatsapp">Whatsapp:</label>
+            <input type="text" id="whatsapp" name="whatsapp" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="imagem"
+              >Imagem: <span id="selimg" style="font-weight: lighter"></span
+            ></label>
+          <div class="form-actions">
+            <a type="submit" id="submit" class="botao salvar"> Salvar </a>
+            <a
+              class="botao cancelar"
+              onclick="window.location.href='admincontato.html'"
+            >
+              Cancelar
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="js/inserirContato.js"></script>
+  </body>
+</html>

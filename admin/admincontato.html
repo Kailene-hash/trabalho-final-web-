@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
     <title>Ventura 3D</title>
     <link rel="stylesheet" href="../css/estilo.css">
-    
-  </head>
-  <body>
+    <script src="js/protecao.js"></script>
+</head>
+<body>
     <header>
-      <div id="logo">
-        <img id="logo" src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
-      </div>
-      <nav>
-        <ul id="menu">
-          <li class="item-menu"><a class="link-menu" href="index.html">Voltar para a página inicial</a></li>
-        </ul>
-      </nav>
+        <div id="logo">
+            <img id="logo" src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">
+        </div>
+        <nav>
+            <ul id="menu">
+                <li class="item-menu"><a class="link-menu" href="index.html">Voltar para a página inicial</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-      <section id="principalContato">
-        <figure>
-          <img src="/images/prediosobreempresa-WEB.jpeg" alt="">
-        </figure>
-        <div id="textoIndContato">
-          <h1>Fale conosco</h1>
-        </div>
-        <div class="card">
-          <div class="linha">
-            <span class="label">Whatsapp</span>
-            <button id="botEdit">Editar</button>
-            <div class="campo">+55 (15) 99629-5972</div>
-        </div>
-        <div class="linha">
-          <span class="label">Email</span>
-           <button id="botEdit">Editar</button>
-          <div class="campo">projetosventura3d@gmail.com</div>
-        </div>
-        <div class="linha">
-          <span class="label">Instagram</span>
-           <button id="botEdit">Editar</button>
-          <div class="campo">@ventura3d</div>
-        </div>
-        <div class="linha">
-          <span class="label">Facebook</span>
-           <button id="botEdit">Editar</button>
-          <div class="campo">Ventura 3D</div>
-        </div>
-      </section>
+        <section id="principalContato">
+            <h2>Contatos Cadastrados</h2>
+
+            <div id="botaoAdd">
+                <a class="botAdd" href="inserir-contato.html">Adicionar contato</a>
+            </div>
+
+            <!-- Container com imagem e tabela lado a lado -->
+            <div class="container-contato-admin">
+                <!-- Imagem à esquerda -->
+                <figure>
+                    <img src="/images/prediosobreempresa-WEB.jpeg" alt="">
+                </figure>
+                
+                <!-- Tabela à direita -->
+                <div class="tabela-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Instagram</th>
+                                <th>Facebook</th>
+                                <th>WhatsApp</th>
+                                <th>Email</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-corpo"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <div id="logo">
-        <img id="logo" src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">  
-      </div>
-      <div id="contato">
-        <a href="https://www.instagram.com/ventura3d?igsh=czN1M216bDlzNzR5"><img src="/images/instagram.png" alt=""></a>
-        <a href="https://m.facebook.com/ventura3ds/"><img src="/images/facebook.png" alt=""></a>
-      </div>
+        <div id="logo">
+            <img id="logo" src="/images/LogoVentura3d-TrabalhoFinalWEB.jpeg" alt="">  
+        </div>
+        <div id="contato">
+            <a href="https://www.instagram.com/ventura3d?igsh=czN1M216bDlzNzR5"><img src="/images/instagram.png" alt=""></a>
+            <a href="https://m.facebook.com/ventura3ds/"><img src="/images/facebook.png" alt=""></a>
+        </div>
     </footer>
-  </body>
+    
+    <script src="js/contato.js"></script>
+</body>
 </html>

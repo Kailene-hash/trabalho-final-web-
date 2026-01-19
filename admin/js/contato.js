@@ -4,7 +4,7 @@ tabelaCorpo.innerHTML = "Aguarde...";
 
 (async () => {
   try {
-    const endpoint = "/imagens";
+    const endpoint = "/contato";
     const urlFinal = urlBase + endpoint;
 
     const response = await fetch(urlFinal);
@@ -16,14 +16,17 @@ tabelaCorpo.innerHTML = "Aguarde...";
     const data = await response.json();
     tabelaCorpo.innerHTML = "";
 
-    data.forEach((imagem) => {
+    data.forEach((contato) => {
       const linha = document.createElement("tr"); 
       
       linha.innerHTML = `
-              <td>${imagem.id}</td>
-              <td><img src="${imagem.link_imagem}" alt="Imagem" style="max-width: 100px; border-radius: 5px;"></td>
+              <td>${contato.id_contato}</td> 
+              <td>${contato.instagram}</td>
+              <td>${contato.facebook}</td>
+              <td>${contato.whatsapp}</td>
+              <td>${contato.email}</td>
               <td>
-                <a class="botao excluir" data-id="${imagem.id}">Excluir</a>
+                <a class="botao excluir" data-id="${contato.id_contato}">Excluir</a>
               </td>
       `;
       tabelaCorpo.appendChild(linha); 
@@ -38,17 +41,17 @@ tabelaCorpo.innerHTML = "Aguarde...";
     e.preventDefault();
     if (e.target.classList.contains("excluir")) {
       const id = e.target.getAttribute("data-id");
-      excluirImagem(id);
+      excluirContato(id);
     }
   }
 
-  async function excluirImagem(id) {
-    if (!confirm("Tem certeza que deseja excluir esta imagem?")) {
+  async function excluirContato(id) {
+    if (!confirm("Tem certeza que deseja excluir este contato?")) {
       return;
     }
 
     try {
-      const endpoint = `/imagens/${id}`;
+      const endpoint = `/contato/${id}`;
       const urlFinal = urlBase + endpoint;
 
       const response = await fetch(urlFinal, {
@@ -59,10 +62,10 @@ tabelaCorpo.innerHTML = "Aguarde...";
         throw new Error(`Erro na requisição: ${response.status}`);
       }
 
-      alert("Imagem excluída com sucesso!");
+      alert("Contato excluído com sucesso!");
       window.location.reload();
     } catch (error) {
-      alert("Erro ao excluir imagem: " + error.message);
+      alert("Contato não foi excluído!");
       console.error(error);
     }
   }
