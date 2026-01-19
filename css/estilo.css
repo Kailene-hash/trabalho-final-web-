@@ -500,7 +500,7 @@ body{
   width: 100%;
 }
 
-/* Container para imagem e tabela lado a lado */
+
 .container-contato-admin {
   display: flex;
   flex-direction: row;
@@ -523,7 +523,7 @@ body{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Wrapper para a tabela ocupar o espaço restante */
+
 .tabela-wrapper {
   flex: 1;
   overflow-x: auto;
@@ -534,7 +534,7 @@ body{
   margin: 0;
 }
 
-/* Responsividade - em telas menores, volta a ficar em coluna */
+
 @media (max-width: 1024px) {
   .container-contato-admin {
     flex-direction: column;
@@ -645,7 +645,7 @@ tbody td:first-child {
   color: #0a1a3f;
 }
 
-/* Estilo dos botões dentro da tabela */
+
 .botao {
   display: inline-block;
   padding: 6px 12px;
@@ -688,7 +688,7 @@ tbody td:first-child {
   background-color: #218838;
 }
 
-/* Mensagem de carregamento na tabela */
+
 #tabela-corpo {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -784,12 +784,12 @@ form {
   border-radius: 4px;
 }
 
-/* Esconde o input sem quebrar */
+
 input[type="file"] {
   display: none;
 }
 
-/* Botão bonito */
+
 .btn-upload {
   display: inline-block;
   padding: 12px 20px;
@@ -837,9 +837,8 @@ input[type="file"] {
   }
 }
 
-/* ============================================
-   LOADING E MENSAGENS - SITE PÚBLICO
-   ============================================ */
+
+/**********************************LOADING E MENSAGENS - SITE PÚBLICO*********************************/
 
 .loading, .loading-portfolio {
   text-align: center;
@@ -847,7 +846,7 @@ input[type="file"] {
   color: #0a1a3f;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
-  grid-column: 1 / -1; /* Ocupa toda a largura do grid */
+  grid-column: 1 / -1; /
 }
 
 .sem-imagens, .erro-portfolio {

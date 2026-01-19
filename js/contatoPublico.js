@@ -14,12 +14,12 @@ const contatoContainer = document.getElementById("contato-container");
 
     const data = await response.json();
 
-    // Limpa o container
+   
     contatoContainer.innerHTML = "";
 
-    // Se houver dados, pega o último contato cadastrado
+
     if (data.length > 0) {
-      const contato = data[data.length - 1]; // Pega o último inserido
+      const contato = data[data.length - 1]; 
 
       contatoContainer.innerHTML = `
         <div class="linha">
